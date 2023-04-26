@@ -1,6 +1,7 @@
 .timer-container{
     position: relative;
     text-align: center;
+    user-select: none;
 }
 
 .timer{

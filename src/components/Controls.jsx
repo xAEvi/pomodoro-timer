@@ -10,6 +10,8 @@ const Controls = ({ }) => {
           id="session-length"
           type="number"
           value={25}
+          min={1}
+          max={60}
         />
       </div>
       <div className="control break">
@@ -18,6 +20,8 @@ const Controls = ({ }) => {
           id="break-legnth"
           type="number"
           value={5}
+          min={1}
+          max={30}
         />
       </div>
       <div className="control long-break">
@@ -26,6 +30,8 @@ const Controls = ({ }) => {
           id="long-break-length"
           type="number"
           value={15}
+          min={1}
+          max={60}
         />
       </div>
     </div>

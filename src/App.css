@@ -17,3 +17,25 @@ body{
   justify-content: center;
   flex-direction: column;
 }
+
+.buttons{
+  display: flex;
+  margin-top: 25px;
+  color: white;
+  gap: 75px;
+}
+
+.play-pause, .reset{
+  cursor: pointer;
+}
+
+.play-pause:active, .reset:active{
+  cursor: pointer;
+  color: #850000;
+  transform: scale(110%);
+}
+
+#pause{
+  display: none;
+}
+
