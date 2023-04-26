@@ -1,0 +1,17 @@
+.container{
+    position: relative;
+    text-align: center;
+}
+
+.timer{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: white;
+    font-size: 75px;
+    transform: translate(-50%, -50%);
+}
+
+.image{
+    width: 350px;
+}
