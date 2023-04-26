@@ -1,0 +1,30 @@
+.controls-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 200px;
+  width: 300px;
+  background-color: #FFE5CA;
+  border-radius: 25px;
+  margin-top: 25px;
+  box-shadow: inset 0 0 10px #CE5959;
+  overflow: hidden;
+}
+
+.control{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 25px;
+  color: #DF2E38;
+}
+
+input{
+  width: 40px;
+  border: none;
+  background-color: #CE5959;
+  box-shadow: inset 0 0 10px #B46060;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
