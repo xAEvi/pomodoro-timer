@@ -1,7 +1,8 @@
 import React from "react";
-import '../stylesheets/Controls.css'
+import '../stylesheets/Controls.css';
 
-const Controls = ({ }) => {
+const Controls = ({ session, breaks, longBreak, handleSessionChange, handleBreaksChange, handleLongBreakChange }) => {
+
   return (
     <div className="controls-container">
       <div className="control session">
@@ -9,9 +10,10 @@ const Controls = ({ }) => {
         <input
           id="session-length"
           type="number"
-          value={25}
+          value={session}
           min={1}
           max={60}
+          onChange={(e) => handleSessionChange(e.target.value)}
         />
       </div>
       <div className="control break">
@@ -19,9 +21,10 @@ const Controls = ({ }) => {
         <input
           id="break-legnth"
           type="number"
-          value={5}
+          value={breaks}
           min={1}
           max={30}
+          onChange={(e) => handleBreaksChange(e.target.value)}
         />
       </div>
       <div className="control long-break">
@@ -29,9 +32,10 @@ const Controls = ({ }) => {
         <input
           id="long-break-length"
           type="number"
-          value={15}
+          value={longBreak}
           min={1}
           max={60}
+          onChange={(e) => handleLongBreakChange(e.target.value)}
         />
       </div>
     </div>

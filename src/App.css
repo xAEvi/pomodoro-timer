@@ -22,7 +22,7 @@ body{
   display: flex;
   margin-top: 25px;
   color: white;
-  gap: 75px;
+  gap: 50px;
 }
 
 .play-pause, .reset{
@@ -35,7 +35,7 @@ body{
   transform: scale(110%);
 }
 
-#pause{
+.hidden{
   display: none;
 }
 
