@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -16,6 +17,10 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.breakTime{
+  background-color: #3C486B;
 }
 
 .buttons{

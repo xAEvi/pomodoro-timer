@@ -102,7 +102,9 @@ function App() {
   const seconds = timeLeft % 60;
 
   return (
-    <div className="App">
+    <div 
+      className={`App ${breakTime ? 'breakTime' : ''}`}
+    >
       <Timer 
         timer={`${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`}
         count={pomodoroCount}
