@@ -37,7 +37,7 @@ function App() {
   }
 
   const resetCountdown = () => {
-    if (window.confirm("Are you sure you want to reset? Pomodoros count will reset as well")){
+    if (window.confirm("Are you sure you want to reset? Pomodoros count will reset too")){
       setPlaying(false);
       setPaused(false);
       setPomodoroCount(0);
@@ -105,6 +105,7 @@ function App() {
     <div className="App">
       <Timer 
         timer={`${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`}
+        count={pomodoroCount}
       />
       <div className='buttons'>
         <div className='play-pause'>
